@@ -1,0 +1,379 @@
+/* .zoom-section img {
+  margin-left: 355px;
+  width: 90px;
+  height: 90px;
+  margin-top: 158px;
+  transition: transform 3s ease-in-out;
+  animation: zoomInOut 6s infinite;
+}
+
+.hover-section img {
+  width: 150px;
+  height: auto;
+  margin-left: 210px;
+  margin-top: -230px;
+  display: block;
+  transition: transform 3s ease-in-out;
+  animation: zoomInOut 6s infinite;
+}
+
+.second-ring img {
+  position: absolute;
+  margin-left: 510px;
+  margin-top: -65px;
+  width: 60px;
+  height: auto;
+  display: block;
+  transition: transform 3s ease-in-out;
+  transform-origin: center;
+  animation: zoomInOut 6s infinite;
+}
+.image-container {
+  position: relative;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 640px) {
+  .zoom-section img {
+    margin-left: 50px;
+    width: 60px;
+    height: 60px;
+    margin-top: 100px;
+  }
+  .hover-section img {
+    margin-left: 50px;
+    width: 120px;
+    margin-top: -180px;
+  }
+  .second-ring img {
+    margin-left: 50px;
+    width: 50px;
+    margin-top: -30px;
+  }
+  .image-container img {
+    margin-left: 30px;
+    margin-top: -100px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .zoom-section img {
+    margin-left: 100px;
+    width: 70px;
+    height: 70px;
+    margin-top: 120px;
+  }
+  .hover-section img {
+    margin-left: 100px;
+    width: 130px;
+    margin-top: -200px;
+  }
+  .second-ring img {
+    margin-left: 100px;
+    width: 55px;
+    margin-top: -50px;
+  }
+  .image-container img {
+    margin-left: 60px;
+    margin-top: -120px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .zoom-section img {
+    margin-left: 250px;
+    width: 75px;
+    height: 75px;
+    margin-top: 140px;
+  }
+  .hover-section img {
+    margin-left: 180px;
+    width: 140px;
+    margin-top: -210px;
+  }
+  .second-ring img {
+    margin-left: 420px;
+    width: 55px;
+    margin-top: -60px;
+  }
+  .image-container img {
+    margin-top: -120px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .zoom-section img {
+    width: 75px;
+    height: 75px;
+    margin-top: 140px;
+  }
+  .hover-section img {
+    margin-left: 180px;
+    width: 140px;
+    margin-top: -210px;
+  }
+  .second-ring img {
+    margin-left: 340px;
+    width: 55px;
+    margin-top: -30px;
+  }
+  .image-container img {
+    margin-left: 75px;
+    margin-top: -120px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .zoom-section img {
+    margin-left: 400px;
+    width: 130px;
+    height: 130px;
+    margin-top: 210px;
+  }
+  .hover-section img {
+    margin-left: 240px;
+    width: 160px;
+    margin-top: -220px;
+  }
+  .second-ring img {
+    margin-left: 580px;
+    width: 60px;
+    margin-top: -90px;
+  }
+  .image-container img {
+    margin-left: 150px;
+    margin-top: -180px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  #image-container {
+    display: none;
+  }
+
+  .left-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+  }
+} */
+
+@media only screen and (min-width: 2000px) and (max-width: 2560px) {
+  .card-img {
+    width: 1000px;
+  }
+  .card-img-main {
+    top: 42%;
+    left: 20%;
+  }
+  .zoom-in-out-img {
+    top: 69%;
+    right: 20%;
+  }
+  .zoom-in-out-round {
+    bottom: 2%;
+    left: 35%;
+  }
+  .zoom-in-out-ring1 {
+    top: 14%;
+    left: 45%;
+  }
+  .zoom-in-out-img {
+    margin: 24px;
+    width: 50px;
+    height: 50px;
+    animation: zoom-in-zoom-out 5s ease infinite;
+  }
+
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(3, 3);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  .zoom-in-out-round {
+    animation: zoom-in-out-round 5s ease infinite;
+  }
+
+  @keyframes zoom-in-out-round {
+    0% {
+      transform: scale(0.5, 0.5);
+    }
+    50% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(0.5, 0.5);
+    }
+  }
+  .zoom-in-out-ring1 {
+    animation: zoom-in-out-ring1 10s ease infinite;
+  }
+
+  @keyframes zoom-in-out-ring1 {
+    0% {
+      transform: scale(0.5, 0.5);
+    }
+    50% {
+      transform: scale(2, 2);
+    }
+    100% {
+      transform: scale(0.5, 0.5);
+    }
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 2100px) {
+  .card-img {
+    width: 700px;
+  }
+  .card-img-main {
+    top: 45%;
+    left: 20%;
+  }
+  .zoom-in-out-img {
+    top: 68%;
+    right: 19%;
+  }
+  .zoom-in-out-round {
+    bottom: 2%;
+    left: 28%;
+  }
+  .zoom-in-out-ring1 {
+    top: 14%;
+    left: 42%;
+  }
+  .zoom-in-out-img {
+    margin: 24px;
+    width: 50px;
+    height: 50px;
+    animation: zoom-in-zoom-out 5s ease infinite;
+  }
+
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(3, 3);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  .zoom-in-out-round {
+    animation: zoom-in-out-round 5s ease infinite;
+  }
+
+  @keyframes zoom-in-out-round {
+    0% {
+      transform: scale(0.5, 0.5);
+    }
+    50% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(0.5, 0.5);
+    }
+  }
+  .zoom-in-out-ring1 {
+    animation: zoom-in-out-ring1 10s ease infinite;
+  }
+
+  @keyframes zoom-in-out-ring1 {
+    0% {
+      transform: scale(0.5, 0.5);
+    }
+    50% {
+      transform: scale(2, 2);
+    }
+    100% {
+      transform: scale(0.5, 0.5);
+    }
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1420px) {
+  .card-img {
+    width: 500px;
+  }
+  .card-img-main {
+    top: 50%;
+    left: 10%;
+  }
+  .zoom-in-out-img {
+    top: 64%;
+    right: 16%;
+  }
+  .zoom-in-out-round {
+    bottom: 2%;
+    left: 20%;
+  }
+  .zoom-in-out-ring1 {
+    top: 14%;
+    left: 42%;
+  }
+  .zoom-in-out-img {
+    margin: 24px;
+    width: 50px;
+    height: 50px;
+    animation: zoom-in-zoom-out 5s ease infinite;
+  }
+
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(2, 2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  .zoom-in-out-round {
+    animation: zoom-in-out-round 5s ease infinite;
+  }
+
+  @keyframes zoom-in-out-round {
+    0% {
+      transform: scale(0.3, 0.3);
+    }
+    50% {
+      transform: scale(0.6, 0.6);
+    }
+    100% {
+      transform: scale(0.3, 0.3);
+    }
+  }
+  .zoom-in-out-ring1 {
+    animation: zoom-in-out-ring1 10s ease infinite;
+  }
+
+  @keyframes zoom-in-out-ring1 {
+    0% {
+      transform: scale(0.5, 0.5);
+    }
+    50% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(0.5, 0.5);
+    }
+  }
+}
